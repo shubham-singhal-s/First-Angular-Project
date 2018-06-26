@@ -1,0 +1,18 @@
+<button (click)="myfunc(1)" class="btn btn-info" style="margin-left: 60px">Line</button>
+<button (click)="myfunc(2)" class="btn btn-info" style="margin-left: 60px">Pie</button>
+
+
+<div *ngIf="chart" style="height: 40%; width:40%; margin: auto;">
+	<canvas id="canvas">{{ chart }}</canvas>
+</div>
+
+<div style="margin: 20px">
+	<mat-progress-spinner mode="determinate" [value]="value" color="#3e3e3e">
+	</mat-progress-spinner>
+	<mat-progress-spinner mode="determinate" style="margin-top:-50px; transform: scaleX(-1)" [value]="value" color="warn">
+	</mat-progress-spinner>
+	<mat-progress-spinner mode="determinate" style="margin-top:-50px; transform: scaleX(1)" [value]="value" color="#3e3e3e">
+	</mat-progress-spinner>
+	<mat-progress-spinner mode="determinate" style="margin-top:-50px; transform: scaleX(-1)" [value]="value" color="warn">
+	</mat-progress-spinner>
+</div>

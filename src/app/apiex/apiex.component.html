@@ -1,0 +1,18 @@
+<div style="margin: auto; width:60%">
+	<input type="text" class="form-control" [(ngModel)]="name" (keydown.enter)="login()"><br>
+	<button class="btn btn-info" (click)="login()">Search</button><br><br>
+	<span *ngIf="vis">
+		<div class="jumbotron" style="width:80%; margin: auto;">
+
+			<div style="margin: auto; width:70%">
+				<h3>{{title}}</h3><br>
+				<b>Realeased: </b>{{released}}<br>
+				<b>Country: </b>{{country}}<br>
+				<b>Genre: </b>{{genre}}<br>
+				<b>Rating: </b>{{imdb}}<br>
+				<b>Plot: </b>{{plot}}<br><br>
+				<img src="{{img}}">
+			</div>
+		</div>
+	</span>
+</div>

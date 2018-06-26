@@ -1,0 +1,4 @@
+[{ "fname": "a", "lname": "b", "addr": "d" },
+	{ "fname": "b", "lname": "d", "addr": "a" },
+	{ "fname": "c", "lname": "c", "addr": "b" },
+	{ "fname": "d", "lname": "a", "addr": "c" }]

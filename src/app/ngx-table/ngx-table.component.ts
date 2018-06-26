@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'inline-edit-demo',
@@ -29,10 +29,9 @@ export class NgxTableComponent{
 
   updateValue(event, cell, rowIndex) {
     console.log('inline editing rowIndex', rowIndex)
-    this.editing[rowIndex + '-' + cell] = false;
     this.rows[rowIndex][cell] = event.target.value;
     this.rows = [...this.rows];
-    console.log('UPDATED!', this.rows[rowIndex][cell]);
+    //console.log('UPDATED!', this.rows[rowIndex][cell]);
   }
 
   onSave(){
